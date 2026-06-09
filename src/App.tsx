@@ -108,7 +108,7 @@ const App = () => (
               <Route path="/refund-policy" element={<RefundPolicyPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </TooltipProvider>
       </CartProvider>
     </LanguageProvider>
