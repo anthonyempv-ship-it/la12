@@ -73,18 +73,18 @@ export function HeroSection() {
           </a>
         </div>
 
-        <div className={`mt-8 md:mt-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-3 md:gap-x-8 transition-all duration-1000 delay-[600ms] ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-          <div className="flex items-center gap-1.5 text-cyan">
-            <Globe className="w-3.5 h-3.5 md:w-4 md:h-4" strokeWidth={1.75} />
-            <span className="text-[10px] md:text-xs font-medium uppercase tracking-wider">{t("trust.shipping")}</span>
+        <div className={`mt-8 md:mt-10 flex flex-wrap items-start justify-center gap-x-4 gap-y-3 md:gap-x-8 transition-all duration-1000 delay-[600ms] ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+          <div className="flex flex-col md:flex-row items-center gap-1 md:gap-1.5 text-cyan flex-1 md:flex-none min-w-[90px] max-w-[120px] md:max-w-none text-center">
+            <Globe className="w-4 h-4 md:w-4 md:h-4" strokeWidth={1.75} />
+            <span className="text-[10px] md:text-xs font-medium uppercase tracking-wider leading-tight">{t("trust.shipping")}</span>
           </div>
-          <div className="flex items-center gap-1.5 text-cyan">
-            <HeartHandshake className="w-3.5 h-3.5 md:w-4 md:h-4" strokeWidth={1.75} />
-            <span className="text-[10px] md:text-xs font-medium uppercase tracking-wider">{t("trust.trusted")}</span>
+          <div className="flex flex-col md:flex-row items-center gap-1 md:gap-1.5 text-cyan flex-1 md:flex-none min-w-[90px] max-w-[120px] md:max-w-none text-center">
+            <HeartHandshake className="w-4 h-4 md:w-4 md:h-4" strokeWidth={1.75} />
+            <span className="text-[10px] md:text-xs font-medium uppercase tracking-wider leading-tight">{t("trust.trusted")}</span>
           </div>
-          <div className="flex items-center gap-1.5 text-cyan">
-            <Award className="w-3.5 h-3.5 md:w-4 md:h-4" strokeWidth={1.75} />
-            <span className="text-[10px] md:text-xs font-medium uppercase tracking-wider">{t("trust.quality")}</span>
+          <div className="flex flex-col md:flex-row items-center gap-1 md:gap-1.5 text-cyan flex-1 md:flex-none min-w-[90px] max-w-[120px] md:max-w-none text-center">
+            <Award className="w-4 h-4 md:w-4 md:h-4" strokeWidth={1.75} />
+            <span className="text-[10px] md:text-xs font-medium uppercase tracking-wider leading-tight">{t("trust.quality")}</span>
           </div>
         </div>
 
