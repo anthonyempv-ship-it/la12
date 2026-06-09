@@ -95,7 +95,7 @@ export function Navbar() {
 
       <div
         className={`overflow-hidden border-t border-border/40 transition-[max-height,opacity] duration-300 ease-out ${
-          searchOpen ? "max-h-20 opacity-100" : "max-h-0 opacity-0"
+          searchOpen ? "max-h-44 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <form onSubmit={onSubmit} className="container max-w-6xl mx-auto px-4 py-3">
@@ -105,12 +105,41 @@ export function Navbar() {
               ref={inputRef}
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              onFocus={() => setSearchOpen(true)}
               placeholder={lang === "es" ? "Buscar camisetas..." : "Search jerseys..."}
               className="w-full bg-secondary border border-border rounded-lg pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
             />
           </div>
+
+          <div className="mt-2.5 flex items-center gap-2 flex-wrap">
+            <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">
+              {t("search.trending")}:
+            </span>
+            {[
+              { en: "Barcelona", es: "Barcelona", q: "Barcelona" },
+              { en: "Retro", es: "Retro", q: "Retro" },
+              { en: "New Season", es: "Nueva Temporada", q: "26/27" },
+              { en: "Real Madrid", es: "Real Madrid", q: "Real Madrid" },
+              { en: "Argentina", es: "Argentina", q: "Argentina" },
+            ].map((tag) => (
+              <button
+                key={tag.q}
+                type="button"
+                onClick={() => {
+                  setQuery(tag.q);
+                  navigate(`/shop?q=${encodeURIComponent(tag.q)}`);
+                  setSearchOpen(false);
+                  setOpen(false);
+                }}
+                className="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full border border-cyan/40 text-cyan/90 hover:bg-cyan/10 hover:text-cyan transition-colors active:scale-95"
+              >
+                {lang === "es" ? tag.es : tag.en}
+              </button>
+            ))}
+          </div>
         </form>
       </div>
+
 
       {open && createPortal(
         <>

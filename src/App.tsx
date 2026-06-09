@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { CartProvider } from "@/contexts/CartContext";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import Index from "./pages/Index.tsx";
 import ProductPage from "./pages/ProductPage.tsx";
 import CheckoutPage from "./pages/CheckoutPage.tsx";
@@ -25,6 +26,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Index />} />
               <Route
@@ -41,16 +43,63 @@ const App = () => (
               />
               <Route
                 path="/retro"
-                element={<ShopPage forceCategory="retro" titleKey={{ en: "Retro", es: "Retro" }} subtitleKey={{ en: "Classic kits from legendary eras", es: "Camisetas clásicas de eras legendarias" }} />}
+                element={<ShopPage forceCategory="retro" titleKey={{ en: "Retro", es: "Retro" }} subtitleKey={{ en: "Classic kits from legendary eras", es: "Camisetas clásicas de eras legendarias" }} showBackToHome />}
               />
               <Route
                 path="/national-teams"
-                element={<ShopPage forceTeamType="national" titleKey={{ en: "National Teams", es: "Selecciones" }} subtitleKey={{ en: "International kits — Player & Special Editions", es: "Camisetas de selecciones — Jugador y Ediciones Especiales" }} />}
+                element={<ShopPage forceTeamType="national" titleKey={{ en: "National Teams", es: "Selecciones" }} subtitleKey={{ en: "International kits — Player & Special Editions", es: "Camisetas de selecciones — Jugador y Ediciones Especiales" }} showBackToHome />}
               />
               <Route
                 path="/shorts"
-                element={<ShopPage forceCategory="shorts" titleKey={{ en: "Shorts", es: "Shorts" }} subtitleKey={{ en: "Pro match shorts — lightweight & breathable", es: "Shorts de partido — livianos y transpirables" }} />}
+                element={<ShopPage forceCategory="shorts" titleKey={{ en: "Shorts", es: "Shorts" }} subtitleKey={{ en: "Pro match shorts — lightweight & breathable", es: "Shorts de partido — livianos y transpirables" }} showBackToHome />}
               />
+
+              {/* Collection routes (homepage carousel) */}
+              <Route
+                path="/collection/new-season"
+                element={
+                  <ShopPage
+                    filterKey="new-season"
+                    titleKey={{ en: "New Season 26/27", es: "Nueva Temporada 26/27" }}
+                    subtitleKey={{ en: "Latest kits, fresh off the pitch", es: "Las últimas equipaciones recién salidas de la cancha" }}
+                    showBackToHome
+                  />
+                }
+              />
+              <Route
+                path="/collection/club-teams"
+                element={
+                  <ShopPage
+                    filterKey="club-teams"
+                    titleKey={{ en: "Club Teams", es: "Clubes" }}
+                    subtitleKey={{ en: "Short sleeve club jerseys", es: "Camisetas de clubes manga corta" }}
+                    showBackToHome
+                  />
+                }
+              />
+              <Route
+                path="/collection/long-sleeve"
+                element={
+                  <ShopPage
+                    forceCategory="longsleeve"
+                    titleKey={{ en: "Long Sleeve", es: "Manga Larga" }}
+                    subtitleKey={{ en: "Long sleeve kits for cold matchdays", es: "Camisetas manga larga para los días fríos" }}
+                    showBackToHome
+                  />
+                }
+              />
+              <Route
+                path="/collection/special-editions"
+                element={
+                  <ShopPage
+                    forceCategory="special"
+                    titleKey={{ en: "Special Editions", es: "Ediciones Especiales" }}
+                    subtitleKey={{ en: "Limited drops, designer & commemorative kits", es: "Lanzamientos limitados, de diseñador y conmemorativos" }}
+                    showBackToHome
+                  />
+                }
+              />
+
               <Route path="/about" element={<AboutPage />} />
               <Route path="/policies" element={<PoliciesPage />} />
               <Route path="/product/:id" element={<ProductPage />} />

@@ -1,14 +1,25 @@
 import { useMemo } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { products, type ProductCategory, type TeamType } from "@/data/products";
+import { products, type ProductCategory, type TeamType, type Product } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const TOP_PICKS_LIMIT = 16;
 
+export type CollectionFilterKey = "new-season" | "club-teams";
+
+const collectionPredicates: Record<CollectionFilterKey, (p: Product) => boolean> = {
+  // Only kits from the latest season (26/27)
+  "new-season": (p) =>
+    /2627/i.test(p.id) || /26\s*\/\s*27/.test(p.name) || /26\s*\/\s*27/.test(p.nameEs),
+  // Club jerseys, short sleeve only
+  "club-teams": (p) => p.teamType === "club" && p.category === "player",
+};
+
 interface ProductGridProps {
   forceTeamType?: TeamType;
   forceCategory?: ProductCategory;
+  filterKey?: CollectionFilterKey;
   hideCategoryFilter?: boolean;
   hideHeading?: boolean;
   limit?: number;
@@ -19,6 +30,7 @@ interface ProductGridProps {
 export function ProductGrid({
   forceTeamType,
   forceCategory,
+  filterKey,
   hideHeading,
   limit,
   showViewAll,
@@ -30,12 +42,13 @@ export function ProductGrid({
   const searchQuery = params.get("q")?.trim() ?? "";
 
   const filtered = useMemo(() => {
+    const collectionPredicate = filterKey ? collectionPredicates[filterKey] : null;
     return products
       .filter((p) => (forceTeamType ? p.teamType === forceTeamType : true))
       .filter((p) => {
-        // Strict rule: exclude shorts everywhere unless explicitly the shorts view
         if (forceCategory === "shorts") return p.category === "shorts";
         if (forceCategory) return p.category === forceCategory;
+        if (collectionPredicate) return collectionPredicate(p);
         return p.category !== "shorts";
       })
       .filter((p) => {
@@ -49,7 +62,7 @@ export function ProductGrid({
         const nameB = (lang === "es" ? b.nameEs : b.name).toLowerCase();
         return nameA.localeCompare(nameB);
       });
-  }, [searchQuery, lang, forceTeamType, forceCategory]);
+  }, [searchQuery, lang, forceTeamType, forceCategory, filterKey]);
 
   const items = limit ? filtered.slice(0, limit) : filtered;
 
