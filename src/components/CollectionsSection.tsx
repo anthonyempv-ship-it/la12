@@ -1,25 +1,25 @@
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
-import imgNewSeason from "@/assets/jersey-psg-2627-home-front.jpg";
-import imgClubTeams from "@/assets/jersey-barcelona-front.jpg";
-import imgRetro from "@/assets/jersey-river-retro-away-front.jpg";
-import imgNational from "@/assets/jersey-argentina-2026-home-front.jpg";
-import imgShorts from "@/assets/shorts-arsenal-home-2526-front.jpg";
-import imgLongSleeve from "@/assets/jersey-arsenal-ls-home-front.jpg";
-import imgSpecial from "@/assets/jersey-bayern-serpent-front.jpg";
+import imgNewSeason from "@/assets/collection-new-season.png.asset.json";
+import imgClubTeams from "@/assets/collection-club.jpg.asset.json";
+import imgRetro from "@/assets/collection-retro.png.asset.json";
+import imgNational from "@/assets/collection-national.jpg.asset.json";
+import imgShorts from "@/assets/collection-shorts.webp.asset.json";
+import imgLongSleeve from "@/assets/collection-long-sleeve.png.asset.json";
+import imgSpecial from "@/assets/collection-special.jpg.asset.json";
 
 export function CollectionsSection() {
   const { t } = useLanguage();
   const navigate = useNavigate();
 
   const cards = [
-    { label: t("collections.newSeason"), img: imgNewSeason, to: "/collection/new-season" },
-    { label: t("collections.clubTeams"), img: imgClubTeams, to: "/collection/club-teams" },
-    { label: t("collections.retro"), img: imgRetro, to: "/retro" },
-    { label: t("collections.nationalTeams"), img: imgNational, to: "/national-teams" },
-    { label: t("collections.shorts"), img: imgShorts, to: "/shorts" },
-    { label: t("collections.longSleeve"), img: imgLongSleeve, to: "/collection/long-sleeve" },
-    { label: t("collections.specialEditions"), img: imgSpecial, to: "/collection/special-editions" },
+    { label: t("collections.newSeason"), img: imgNewSeason.url, to: "/collection/new-season" },
+    { label: t("collections.clubTeams"), img: imgClubTeams.url, to: "/collection/club-teams" },
+    { label: t("collections.retro"), img: imgRetro.url, to: "/retro" },
+    { label: t("collections.nationalTeams"), img: imgNational.url, to: "/national-teams" },
+    { label: t("collections.shorts"), img: imgShorts.url, to: "/shorts" },
+    { label: t("collections.longSleeve"), img: imgLongSleeve.url, to: "/collection/long-sleeve" },
+    { label: t("collections.specialEditions"), img: imgSpecial.url, to: "/collection/special-editions" },
   ];
 
   return (

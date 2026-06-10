@@ -65,12 +65,16 @@ export function HeroSection() {
         </p>
 
         <div className={`flex justify-center transition-all duration-1000 delay-[450ms] ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{ filter: visible ? "blur(0)" : "blur(6px)" }}>
-          <a
-            href="#products"
+          <button
+            type="button"
+            onClick={() => {
+              const el = document.getElementById("products");
+              if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+            }}
             className="bg-primary text-primary-foreground font-bold uppercase tracking-wider text-sm px-8 py-4 rounded transition-all duration-200 hover:shadow-[0_0_30px_hsl(192_99%_61%/0.4)] active:scale-95"
           >
             {t("hero.shopNow")}
-          </a>
+          </button>
         </div>
 
         <div className={`mt-8 md:mt-10 flex flex-wrap items-start justify-center gap-x-4 gap-y-3 md:gap-x-8 transition-all duration-1000 delay-[600ms] ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
