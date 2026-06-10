@@ -1,25 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
-import imgNewSeason from "@/assets/collection-new-season.png.asset.json";
-import imgClubTeams from "@/assets/collection-club.jpg.asset.json";
-import imgRetro from "@/assets/collection-retro.png.asset.json";
-import imgNational from "@/assets/collection-national.jpg.asset.json";
-import imgShorts from "@/assets/collection-shorts.webp.asset.json";
-import imgLongSleeve from "@/assets/collection-long-sleeve.png.asset.json";
-import imgSpecial from "@/assets/collection-special.jpg.asset.json";
 
 export function CollectionsSection() {
   const { t } = useLanguage();
   const navigate = useNavigate();
 
   const cards = [
-    { label: t("collections.newSeason"), img: imgNewSeason.url, to: "/collection/new-season" },
-    { label: t("collections.clubTeams"), img: imgClubTeams.url, to: "/collection/club-teams" },
-    { label: t("collections.retro"), img: imgRetro.url, to: "/retro" },
-    { label: t("collections.nationalTeams"), img: imgNational.url, to: "/national-teams" },
-    { label: t("collections.shorts"), img: imgShorts.url, to: "/shorts" },
-    { label: t("collections.longSleeve"), img: imgLongSleeve.url, to: "/collection/long-sleeve" },
-    { label: t("collections.specialEditions"), img: imgSpecial.url, to: "/collection/special-editions" },
+    { label: t("collections.newSeason"), img: "./collections/new-season.webp", to: "/collection/new-season" },
+    { label: t("collections.clubTeams"), img: "./collections/club.webp", to: "/collection/club-teams" },
+    { label: t("collections.retro"), img: "./collections/retro.webp", to: "/retro" },
+    { label: t("collections.nationalTeams"), img: "./collections/national.webp", to: "/national-teams" },
+    { label: t("collections.shorts"), img: "./collections/shorts.webp", to: "/shorts" },
+    { label: t("collections.longSleeve"), img: "./collections/long-sleeve.webp", to: "/collection/long-sleeve" },
+    { label: t("collections.specialEditions"), img: "./collections/special.webp", to: "/collection/special-editions" },
   ];
 
   return (
@@ -30,7 +23,7 @@ export function CollectionsSection() {
         </h2>
 
         <div className="flex gap-3 md:gap-4 overflow-x-auto snap-x snap-mandatory -mx-4 px-4 pb-2 scrollbar-hide">
-          {cards.map((c) => (
+          {cards.map((c, i) => (
             <button
               key={c.label}
               onClick={() => navigate(c.to)}
@@ -39,10 +32,13 @@ export function CollectionsSection() {
               <img
                 src={c.img}
                 alt={c.label}
-                loading="lazy"
+                loading={i < 2 ? "eager" : "lazy"}
+                decoding="async"
+                width={400}
+                height={500}
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
               <div className="absolute inset-x-0 bottom-0 p-3 md:p-4">
                 <p className="text-white text-xs md:text-sm font-bold uppercase tracking-wider text-center">
                   {c.label}
