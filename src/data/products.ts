@@ -200,16 +200,20 @@ import jerseyNetherlandsPattaSpecialFront from "@/assets/jersey-netherlands-patt
 import jerseyNetherlandsPattaSpecialBack from "@/assets/jersey-netherlands-patta-special-back.jpg";
 import jerseyMarseille2627AwayFront from "@/assets/jersey-marseille-2627-away-front.jpg";
 import jerseyMarseille2627AwayBack from "@/assets/jersey-marseille-2627-away-back.jpg";
-import jerseyArsenal2627AwayFront from "@/assets/jersey-arsenal-2627-away-front.jpg.asset.json";
-import jerseyArsenal2627AwayBack from "@/assets/jersey-arsenal-2627-away-back.jpg.asset.json";
-import jerseyRealMadridOriginalsSpecialFront from "@/assets/jersey-realmadrid-originals-special-front.jpg.asset.json";
-import jerseyRealMadridOriginalsSpecialBack from "@/assets/jersey-realmadrid-originals-special-back.jpg.asset.json";
-import jerseyPsg0001AwayFront from "@/assets/jersey-psg-0001-away-front.jpg.asset.json";
-import jerseyPsg0001AwayBack from "@/assets/jersey-psg-0001-away-back.jpg.asset.json";
-import jerseyRealMadrid2324AwayFront from "@/assets/jersey-realmadrid-2324-away-front.jpg.asset.json";
-import jerseyRealMadrid2324AwayBack from "@/assets/jersey-realmadrid-2324-away-back.jpg.asset.json";
-import jerseyRealMadrid2526HomeFront from "@/assets/jersey-realmadrid-2526-home-front.jpg.asset.json";
-import jerseyRealMadrid2526HomeBack from "@/assets/jersey-realmadrid-2526-home-back.jpg.asset.json";
+// New jerseys are served as static files from /public/products/.
+// To add a new product image: drop the file into public/products/ and reference it
+// here as "./products/<filename>" — this resolves relatively from the deployed root
+// (works on Lovable preview, custom domains, and GitHub Pages alike).
+const jerseyArsenal2627AwayFront = "./products/jersey-arsenal-2627-away-front.jpg";
+const jerseyArsenal2627AwayBack = "./products/jersey-arsenal-2627-away-back.jpg";
+const jerseyRealMadridOriginalsSpecialFront = "./products/jersey-realmadrid-originals-special-front.jpg";
+const jerseyRealMadridOriginalsSpecialBack = "./products/jersey-realmadrid-originals-special-back.jpg";
+const jerseyPsg0001AwayFront = "./products/jersey-psg-0001-away-front.jpg";
+const jerseyPsg0001AwayBack = "./products/jersey-psg-0001-away-back.jpg";
+const jerseyRealMadrid2324AwayFront = "./products/jersey-realmadrid-2324-away-front.jpg";
+const jerseyRealMadrid2324AwayBack = "./products/jersey-realmadrid-2324-away-back.jpg";
+const jerseyRealMadrid2526HomeFront = "./products/jersey-realmadrid-2526-home-front.jpg";
+const jerseyRealMadrid2526HomeBack = "./products/jersey-realmadrid-2526-home-back.jpg";
 import shortsArsenalFront from "@/assets/shorts-arsenal-home-2526-front.jpg";
 import shortsArsenalDetail from "@/assets/shorts-arsenal-home-2526-detail.jpg";
 import shortsManCityFront from "@/assets/shorts-mancity-away-2526-front.jpg";
