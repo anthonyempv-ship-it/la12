@@ -1560,8 +1560,7 @@ export const products: Product[] = [
     descriptionEs: "Versión Premium de Jugador del kit del Real Madrid 25/26 — cuerpo blanco con cuello y puños acanalados verde oscuro y franjas burdeos en los hombros para un look moderno y audaz.",
   },
   {
-
-    id: "shorts-arsenal-home-2526",
+  id: "shorts-arsenal-home-2526",
     name: "Arsenal Home 25/26 Shorts",
     nameEs: "Shorts Arsenal Local 25/26",
     category: "shorts",
