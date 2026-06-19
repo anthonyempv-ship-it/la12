@@ -200,6 +200,16 @@ import jerseyNetherlandsPattaSpecialFront from "@/assets/jersey-netherlands-patt
 import jerseyNetherlandsPattaSpecialBack from "@/assets/jersey-netherlands-patta-special-back.jpg";
 import jerseyMarseille2627AwayFront from "@/assets/jersey-marseille-2627-away-front.jpg";
 import jerseyMarseille2627AwayBack from "@/assets/jersey-marseille-2627-away-back.jpg";
+import jerseyArsenal2627AwayFront from "@/assets/jersey-arsenal-2627-away-front.jpg.asset.json";
+import jerseyArsenal2627AwayBack from "@/assets/jersey-arsenal-2627-away-back.jpg.asset.json";
+import jerseyRealMadridOriginalsSpecialFront from "@/assets/jersey-realmadrid-originals-special-front.jpg.asset.json";
+import jerseyRealMadridOriginalsSpecialBack from "@/assets/jersey-realmadrid-originals-special-back.jpg.asset.json";
+import jerseyPsg0001AwayFront from "@/assets/jersey-psg-0001-away-front.jpg.asset.json";
+import jerseyPsg0001AwayBack from "@/assets/jersey-psg-0001-away-back.jpg.asset.json";
+import jerseyRealMadrid2324AwayFront from "@/assets/jersey-realmadrid-2324-away-front.jpg.asset.json";
+import jerseyRealMadrid2324AwayBack from "@/assets/jersey-realmadrid-2324-away-back.jpg.asset.json";
+import jerseyRealMadrid2526HomeFront from "@/assets/jersey-realmadrid-2526-home-front.jpg.asset.json";
+import jerseyRealMadrid2526HomeBack from "@/assets/jersey-realmadrid-2526-home-back.jpg.asset.json";
 import shortsArsenalFront from "@/assets/shorts-arsenal-home-2526-front.jpg";
 import shortsArsenalDetail from "@/assets/shorts-arsenal-home-2526-detail.jpg";
 import shortsManCityFront from "@/assets/shorts-mancity-away-2526-front.jpg";
