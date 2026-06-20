@@ -209,6 +209,11 @@ import jerseyMarseille2627AwayBack from "@/assets/jersey-marseille-2627-away-bac
 // every deploy target (Lovable preview, custom domain, GitHub Pages).
 // DO NOT USE: "./products/...", "/placeholder.svg", "@/assets/*.asset.json",
 // or any "/__l5e/..." CDN URL — those break in production on GitHub Pages.
+//
+// PLAYER VERSION DESCRIPTION FORMAT (mandatory, no exceptions):
+//   descriptionEs: "Camiseta versión player [Equipo] [Temporada]. Como la que usan los jugadores en cancha."
+//   description:   "Player version jersey [Team] [Season]. Just like the one players wear on the pitch."
+// Keep it short and direct — do NOT add extra marketing copy.
 // ─────────────────────────────────────────────────────────────────────────────
 import jerseyArsenal2627AwayFront from "@/assets/jersey-arsenal-2627-away-front.jpg";
 import jerseyArsenal2627AwayBack from "@/assets/jersey-arsenal-2627-away-back.jpg";
@@ -218,8 +223,8 @@ import jerseyPsg0001AwayFront from "@/assets/jersey-psg-0001-away-front.jpg";
 import jerseyPsg0001AwayBack from "@/assets/jersey-psg-0001-away-back.jpg";
 import jerseyRealMadrid2324AwayFront from "@/assets/jersey-realmadrid-2324-away-front.jpg";
 import jerseyRealMadrid2324AwayBack from "@/assets/jersey-realmadrid-2324-away-back.jpg";
-import jerseyRealMadrid2526HomeFront from "@/assets/jersey-realmadrid-2526-home-front.jpg";
-import jerseyRealMadrid2526HomeBack from "@/assets/jersey-realmadrid-2526-home-back.jpg";
+import jerseyRealMadrid2627HomeFront from "@/assets/jersey-realmadrid-2627-home-front.jpg";
+import jerseyRealMadrid2627HomeBack from "@/assets/jersey-realmadrid-2627-home-back.jpg";
 import shortsArsenalFront from "@/assets/shorts-arsenal-home-2526-front.jpg";
 import shortsArsenalDetail from "@/assets/shorts-arsenal-home-2526-detail.jpg";
 import shortsManCityFront from "@/assets/shorts-mancity-away-2526-front.jpg";
@@ -1548,16 +1553,16 @@ export const products: Product[] = [
     descriptionEs: "Versión Premium de Jugador del kit visitante del Real Madrid 23/24 — cuerpo azul marino oscuro con patrón jacquard de eslabones ondulados tonales y acentos dorados en cuello y puños.",
   },
   {
-    id: "realmadrid-2526-home",
-    name: "Real Madrid Home Player Version 25/26",
-    nameEs: "Real Madrid Home Versión Jugador 25/26",
+    id: "realmadrid-2627-home",
+    name: "Real Madrid Home Player Version 26/27",
+    nameEs: "Real Madrid Home Versión Jugador 26/27",
     category: "player",
     teamType: "club",
-    images: [jerseyRealMadrid2526HomeFront, jerseyRealMadrid2526HomeBack],
+    images: [jerseyRealMadrid2627HomeFront, jerseyRealMadrid2627HomeBack],
     price: 35.00,
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
-    description: "Premium Player Version of Real Madrid's 25/26 kit — crisp white body with deep green ribbed collar and cuffs and burgundy shoulder stripes for a bold modern look.",
-    descriptionEs: "Versión Premium de Jugador del kit del Real Madrid 25/26 — cuerpo blanco con cuello y puños acanalados verde oscuro y franjas burdeos en los hombros para un look moderno y audaz.",
+    description: "Player version jersey Real Madrid 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Real Madrid 26/27. Como la que usan los jugadores en cancha.",
   },
   {
 
