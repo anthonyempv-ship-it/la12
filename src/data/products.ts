@@ -209,6 +209,11 @@ import jerseyMarseille2627AwayBack from "@/assets/jersey-marseille-2627-away-bac
 // every deploy target (Lovable preview, custom domain, GitHub Pages).
 // DO NOT USE: "./products/...", "/placeholder.svg", "@/assets/*.asset.json",
 // or any "/__l5e/..." CDN URL — those break in production on GitHub Pages.
+//
+// PLAYER VERSION DESCRIPTION FORMAT (mandatory, no exceptions):
+//   descriptionEs: "Camiseta versión player [Equipo] [Temporada]. Como la que usan los jugadores en cancha."
+//   description:   "Player version jersey [Team] [Season]. Just like the one players wear on the pitch."
+// Keep it short and direct — do NOT add extra marketing copy.
 // ─────────────────────────────────────────────────────────────────────────────
 import jerseyArsenal2627AwayFront from "@/assets/jersey-arsenal-2627-away-front.jpg";
 import jerseyArsenal2627AwayBack from "@/assets/jersey-arsenal-2627-away-back.jpg";
