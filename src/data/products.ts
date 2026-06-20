@@ -225,6 +225,16 @@ import jerseyRealMadrid2324AwayFront from "@/assets/jersey-realmadrid-2324-away-
 import jerseyRealMadrid2324AwayBack from "@/assets/jersey-realmadrid-2324-away-back.jpg";
 import jerseyRealMadrid2627HomeFront from "@/assets/jersey-realmadrid-2627-home-front.jpg";
 import jerseyRealMadrid2627HomeBack from "@/assets/jersey-realmadrid-2627-home-back.jpg";
+import jerseyBarcelona2627HomeFront from "@/assets/jersey-barcelona-2627-home-front.jpg";
+import jerseyBarcelona2627HomeBack from "@/assets/jersey-barcelona-2627-home-back.jpg";
+import jerseyManCity2627HomeFront from "@/assets/jersey-mancity-2627-home-front.jpg";
+import jerseyManCity2627HomeBack from "@/assets/jersey-mancity-2627-home-back.jpg";
+import jerseyFrancePrematch2026Front from "@/assets/jersey-france-prematch-2026-front.jpg";
+import jerseyFrancePrematch2026Back from "@/assets/jersey-france-prematch-2026-back.jpg";
+import jerseySpainPrematch2026Front from "@/assets/jersey-spain-prematch-2026-front.jpg";
+import jerseySpainPrematch2026Back from "@/assets/jersey-spain-prematch-2026-back.jpg";
+import jerseyKoreaPrematch2026Front from "@/assets/jersey-korea-prematch-2026-front.jpg";
+import jerseyKoreaPrematch2026Back from "@/assets/jersey-korea-prematch-2026-back.jpg";
 import shortsArsenalFront from "@/assets/shorts-arsenal-home-2526-front.jpg";
 import shortsArsenalDetail from "@/assets/shorts-arsenal-home-2526-detail.jpg";
 import shortsManCityFront from "@/assets/shorts-mancity-away-2526-front.jpg";
