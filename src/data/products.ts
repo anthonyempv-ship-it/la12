@@ -235,6 +235,16 @@ import jerseySpainPrematch2026Front from "@/assets/jersey-spain-prematch-2026-fr
 import jerseySpainPrematch2026Back from "@/assets/jersey-spain-prematch-2026-back.jpg";
 import jerseyKoreaPrematch2026Front from "@/assets/jersey-korea-prematch-2026-front.jpg";
 import jerseyKoreaPrematch2026Back from "@/assets/jersey-korea-prematch-2026-back.jpg";
+import jerseyFrance2026AwayFront from "@/assets/jersey-france-2026-away-front.jpg";
+import jerseyFrance2026AwayBack from "@/assets/jersey-france-2026-away-back.jpg";
+import jerseyFrance2026HomeFront from "@/assets/jersey-france-2026-home-front.jpg";
+import jerseyFrance2026HomeBack from "@/assets/jersey-france-2026-home-back.jpg";
+import jerseyMarseille9899HomeFront from "@/assets/jersey-marseille-9899-home-front.jpg";
+import jerseyMarseille9899HomeBack from "@/assets/jersey-marseille-9899-home-back.jpg";
+import jerseyValencia2627HomeFront from "@/assets/jersey-valencia-2627-home-front.jpg";
+import jerseyValencia2627HomeBack from "@/assets/jersey-valencia-2627-home-back.jpg";
+import jerseyEngland2026HomeFront from "@/assets/jersey-england-2026-home-front.jpg";
+import jerseyEngland2026HomeBack from "@/assets/jersey-england-2026-home-back.jpg";
 import shortsArsenalFront from "@/assets/shorts-arsenal-home-2526-front.jpg";
 import shortsArsenalDetail from "@/assets/shorts-arsenal-home-2526-detail.jpg";
 import shortsManCityFront from "@/assets/shorts-mancity-away-2526-front.jpg";
@@ -1636,6 +1646,66 @@ export const products: Product[] = [
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
     description: "Player version jersey Real Madrid 26/27. Just like the one players wear on the pitch.",
     descriptionEs: "Camiseta versión player Real Madrid 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "france-2026-away",
+    name: "France Away Player Version 2026",
+    nameEs: "Francia Away Versión Jugador 2026",
+    category: "player",
+    teamType: "national",
+    images: [jerseyFrance2026AwayFront, jerseyFrance2026AwayBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey France Away 2026. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Francia Away 2026. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "france-2026-home",
+    name: "France Home Player Version 2026",
+    nameEs: "Francia Home Versión Jugador 2026",
+    category: "player",
+    teamType: "national",
+    images: [jerseyFrance2026HomeFront, jerseyFrance2026HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey France Home 2026. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Francia Home 2026. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "marseille-9899-home",
+    name: "Marseille Home Retro 98/99",
+    nameEs: "Marsella Local Retro 98/99",
+    category: "retro",
+    teamType: "club",
+    images: [jerseyMarseille9899HomeFront, jerseyMarseille9899HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL"],
+    description: "Retro Olympique de Marseille 98/99 home kit — classic white body with sky blue collar and shoulder stripes, centenary crest and iconic Ericsson chest sponsor.",
+    descriptionEs: "Kit local retro del Olympique de Marsella 98/99 — cuerpo blanco clásico con cuello y franjas azul cielo, escudo del centenario y el icónico patrocinador Ericsson en el pecho.",
+  },
+  {
+    id: "valencia-2627-home",
+    name: "Valencia Home Player Version 26/27",
+    nameEs: "Valencia Home Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyValencia2627HomeFront, jerseyValencia2627HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Valencia 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Valencia 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "england-2026-home",
+    name: "England Home Player Version 2026",
+    nameEs: "Inglaterra Home Versión Jugador 2026",
+    category: "player",
+    teamType: "national",
+    images: [jerseyEngland2026HomeFront, jerseyEngland2026HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey England Home 2026. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Inglaterra Home 2026. Como la que usan los jugadores en cancha.",
   },
   {
 
