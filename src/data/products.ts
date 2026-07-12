@@ -245,6 +245,16 @@ import jerseyValencia2627HomeFront from "@/assets/jersey-valencia-2627-home-fron
 import jerseyValencia2627HomeBack from "@/assets/jersey-valencia-2627-home-back.jpg";
 import jerseyEngland2026HomeFront from "@/assets/jersey-england-2026-home-front.jpg";
 import jerseyEngland2026HomeBack from "@/assets/jersey-england-2026-home-back.jpg";
+import jerseySpain2026HomeFront from "@/assets/jersey-spain-2026-home-front.jpg";
+import jerseySpain2026HomeBack from "@/assets/jersey-spain-2026-home-back.jpg";
+import jerseyInter2627HomeFront from "@/assets/jersey-inter-2627-home-front.jpg";
+import jerseyInter2627HomeBack from "@/assets/jersey-inter-2627-home-back.jpg";
+import jerseyLeeds2627HomeFront from "@/assets/jersey-leeds-2627-home-front.jpg";
+import jerseyLeeds2627HomeBack from "@/assets/jersey-leeds-2627-home-back.jpg";
+import jerseyAstonVilla2627HomeFront from "@/assets/jersey-astonvilla-2627-home-front.jpg";
+import jerseyAstonVilla2627HomeBack from "@/assets/jersey-astonvilla-2627-home-back.jpg";
+import jerseyIvoryCoast2026HomeFront from "@/assets/jersey-ivorycoast-2026-home-front.jpg";
+import jerseyIvoryCoast2026HomeBack from "@/assets/jersey-ivorycoast-2026-home-back.jpg";
 import shortsArsenalFront from "@/assets/shorts-arsenal-home-2526-front.jpg";
 import shortsArsenalDetail from "@/assets/shorts-arsenal-home-2526-detail.jpg";
 import shortsManCityFront from "@/assets/shorts-mancity-away-2526-front.jpg";
@@ -1706,6 +1716,66 @@ export const products: Product[] = [
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
     description: "Player version jersey England Home 2026. Just like the one players wear on the pitch.",
     descriptionEs: "Camiseta versión player Inglaterra Home 2026. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "spain-2026-home",
+    name: "Spain Home Player Version 2026",
+    nameEs: "España Home Versión Jugador 2026",
+    category: "player",
+    teamType: "national",
+    images: [jerseySpain2026HomeFront, jerseySpain2026HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Spain Home 2026. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player España Home 2026. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "inter-2627-home",
+    name: "Inter Milan Home Player Version 26/27",
+    nameEs: "Inter Milán Home Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyInter2627HomeFront, jerseyInter2627HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Inter Milan 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Inter Milán 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "leeds-2627-home",
+    name: "Leeds United Home Player Version 26/27",
+    nameEs: "Leeds United Home Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyLeeds2627HomeFront, jerseyLeeds2627HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Leeds United 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Leeds United 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "astonvilla-2627-home",
+    name: "Aston Villa Home Player Version 26/27",
+    nameEs: "Aston Villa Home Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyAstonVilla2627HomeFront, jerseyAstonVilla2627HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Aston Villa 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Aston Villa 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "ivorycoast-2026-home",
+    name: "Ivory Coast Home Player Version 2026",
+    nameEs: "Costa de Marfil Home Versión Jugador 2026",
+    category: "player",
+    teamType: "national",
+    images: [jerseyIvoryCoast2026HomeFront, jerseyIvoryCoast2026HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Ivory Coast Home 2026. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Costa de Marfil Home 2026. Como la que usan los jugadores en cancha.",
   },
   {
 
