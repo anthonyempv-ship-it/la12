@@ -245,6 +245,16 @@ import jerseyValencia2627HomeFront from "@/assets/jersey-valencia-2627-home-fron
 import jerseyValencia2627HomeBack from "@/assets/jersey-valencia-2627-home-back.jpg";
 import jerseyEngland2026HomeFront from "@/assets/jersey-england-2026-home-front.jpg";
 import jerseyEngland2026HomeBack from "@/assets/jersey-england-2026-home-back.jpg";
+import jerseySpain2026HomeFront from "@/assets/jersey-spain-2026-home-front.jpg";
+import jerseySpain2026HomeBack from "@/assets/jersey-spain-2026-home-back.jpg";
+import jerseyInter2627HomeFront from "@/assets/jersey-inter-2627-home-front.jpg";
+import jerseyInter2627HomeBack from "@/assets/jersey-inter-2627-home-back.jpg";
+import jerseyLeeds2627HomeFront from "@/assets/jersey-leeds-2627-home-front.jpg";
+import jerseyLeeds2627HomeBack from "@/assets/jersey-leeds-2627-home-back.jpg";
+import jerseyAstonVilla2627HomeFront from "@/assets/jersey-astonvilla-2627-home-front.jpg";
+import jerseyAstonVilla2627HomeBack from "@/assets/jersey-astonvilla-2627-home-back.jpg";
+import jerseyIvoryCoast2026HomeFront from "@/assets/jersey-ivorycoast-2026-home-front.jpg";
+import jerseyIvoryCoast2026HomeBack from "@/assets/jersey-ivorycoast-2026-home-back.jpg";
 import shortsArsenalFront from "@/assets/shorts-arsenal-home-2526-front.jpg";
 import shortsArsenalDetail from "@/assets/shorts-arsenal-home-2526-detail.jpg";
 import shortsManCityFront from "@/assets/shorts-mancity-away-2526-front.jpg";
