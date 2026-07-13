@@ -116,7 +116,7 @@ export function ProductGrid({
 
   const filtered = useMemo(() => {
     if (isTopPicks) {
-      return buildTopPicks(products, limit!);
+      return buildTopPicks(products);
     }
     const collectionPredicate = filterKey ? collectionPredicates[filterKey] : null;
     return products
