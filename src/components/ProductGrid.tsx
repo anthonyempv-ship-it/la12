@@ -16,6 +16,72 @@ const collectionPredicates: Record<CollectionFilterKey, (p: Product) => boolean>
   "club-teams": (p) => p.teamType === "club" && p.category === "player",
 };
 
+// Priority products (in order) featured at the top of Top Picks on the homepage.
+const TOP_PICKS_PRIORITY_IDS: string[] = [
+  "argentina-2026-home",
+  "france-2026-home",
+  "england-2026-home",
+  "spain-2026-home",
+  "barcelona-2627-home",
+  "real-madrid-ls-home-0607",
+];
+
+// All store categories that must be represented in Top Picks.
+const REQUIRED_CATEGORIES: ProductCategory[] = [
+  "player",
+  "retro",
+  "longsleeve",
+  "special",
+  "shorts",
+];
+const REQUIRED_TEAM_TYPES: TeamType[] = ["club", "national"];
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function buildTopPicks(all: Product[], limit: number): Product[] {
+  const byId = new Map(all.map((p) => [p.id, p]));
+  const picked: Product[] = [];
+  const pickedIds = new Set<string>();
+
+  const add = (p?: Product) => {
+    if (!p || pickedIds.has(p.id) || picked.length >= limit) return;
+    picked.push(p);
+    pickedIds.add(p.id);
+  };
+
+  // 1. Priority products first, in order.
+  for (const id of TOP_PICKS_PRIORITY_IDS) add(byId.get(id));
+
+  // 2. Guarantee at least one of each required category.
+  for (const cat of REQUIRED_CATEGORIES) {
+    if (picked.some((p) => p.category === cat)) continue;
+    const candidate = shuffle(all.filter((p) => p.category === cat && !pickedIds.has(p.id)))[0];
+    add(candidate);
+  }
+
+  // 3. Guarantee at least one of each team type.
+  for (const tt of REQUIRED_TEAM_TYPES) {
+    if (picked.some((p) => p.teamType === tt)) continue;
+    const candidate = shuffle(all.filter((p) => p.teamType === tt && !pickedIds.has(p.id)))[0];
+    add(candidate);
+  }
+
+  // 4. Fill the rest randomly with the remainder of the catalog.
+  for (const p of shuffle(all.filter((p) => !pickedIds.has(p.id)))) {
+    if (picked.length >= limit) break;
+    add(p);
+  }
+
+  return picked;
+}
+
 interface ProductGridProps {
   forceTeamType?: TeamType;
   forceCategory?: ProductCategory;
@@ -43,7 +109,18 @@ export function ProductGrid({
   const sectionRef = useRef<HTMLElement | null>(null);
   const [page, setPage] = useState(1);
 
+  // Detect homepage Top Picks mode: limited list, no filters/search/force
+  const isTopPicks =
+    !!limit &&
+    !searchQuery &&
+    !forceTeamType &&
+    !forceCategory &&
+    !filterKey;
+
   const filtered = useMemo(() => {
+    if (isTopPicks) {
+      return buildTopPicks(products, limit!);
+    }
     const collectionPredicate = filterKey ? collectionPredicates[filterKey] : null;
     return products
       .filter((p) => (forceTeamType ? p.teamType === forceTeamType : true))
@@ -64,7 +141,7 @@ export function ProductGrid({
         const nameB = (lang === "es" ? b.nameEs : b.name).toLowerCase();
         return nameA.localeCompare(nameB);
       });
-  }, [searchQuery, lang, forceTeamType, forceCategory, filterKey]);
+  }, [searchQuery, lang, forceTeamType, forceCategory, filterKey, isTopPicks, limit]);
 
   // Reset page on filter/search change
   useEffect(() => {
