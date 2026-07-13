@@ -20,6 +20,9 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
           alt={lang === "es" ? product.nameEs : product.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
+          decoding="async"
+          width={400}
+          height={500}
         />
       </div>
       <div className="p-3 md:p-4">

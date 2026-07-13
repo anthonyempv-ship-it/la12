@@ -255,6 +255,16 @@ import jerseyAstonVilla2627HomeFront from "@/assets/jersey-astonvilla-2627-home-
 import jerseyAstonVilla2627HomeBack from "@/assets/jersey-astonvilla-2627-home-back.jpg";
 import jerseyIvoryCoast2026HomeFront from "@/assets/jersey-ivorycoast-2026-home-front.jpg";
 import jerseyIvoryCoast2026HomeBack from "@/assets/jersey-ivorycoast-2026-home-back.jpg";
+import jerseyNorway2026HomeFront from "@/assets/jersey-norway-2026-home-front.jpg";
+import jerseyNorway2026HomeBack from "@/assets/jersey-norway-2026-home-back.jpg";
+import jerseyNorway2026AwayFront from "@/assets/jersey-norway-2026-away-front.jpg";
+import jerseyNorway2026AwayBack from "@/assets/jersey-norway-2026-away-back.jpg";
+import jerseySantos1112AwayFront from "@/assets/jersey-santos-1112-away-front.jpg";
+import jerseySantos1112AwayBack from "@/assets/jersey-santos-1112-away-back.jpg";
+import jerseyRealMadrid0102AwayFront from "@/assets/jersey-realmadrid-0102-away-front.jpg";
+import jerseyRealMadrid0102AwayBack from "@/assets/jersey-realmadrid-0102-away-back.jpg";
+import jerseyChelsea2627AwayFront from "@/assets/jersey-chelsea-2627-away-front.jpg";
+import jerseyChelsea2627AwayBack from "@/assets/jersey-chelsea-2627-away-back.jpg";
 import shortsArsenalFront from "@/assets/shorts-arsenal-home-2526-front.jpg";
 import shortsArsenalDetail from "@/assets/shorts-arsenal-home-2526-detail.jpg";
 import shortsManCityFront from "@/assets/shorts-mancity-away-2526-front.jpg";
@@ -1777,6 +1787,67 @@ export const products: Product[] = [
     description: "Player version jersey Ivory Coast Home 2026. Just like the one players wear on the pitch.",
     descriptionEs: "Camiseta versión player Costa de Marfil Home 2026. Como la que usan los jugadores en cancha.",
   },
+  {
+    id: "norway-2026-home",
+    name: "Norway Home Player Version 2026",
+    nameEs: "Noruega Home Versión Jugador 2026",
+    category: "player",
+    teamType: "national",
+    images: [jerseyNorway2026HomeFront, jerseyNorway2026HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Norway Home 2026. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Noruega Home 2026. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "norway-2026-away",
+    name: "Norway Away Player Version 2026",
+    nameEs: "Noruega Away Versión Jugador 2026",
+    category: "player",
+    teamType: "national",
+    images: [jerseyNorway2026AwayFront, jerseyNorway2026AwayBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Norway Away 2026. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Noruega Away 2026. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "chelsea-2627-away",
+    name: "Chelsea Away Player Version 26/27",
+    nameEs: "Chelsea Away Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyChelsea2627AwayFront, jerseyChelsea2627AwayBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Chelsea Away 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Chelsea Away 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "santos-retro-away-1112",
+    name: "Santos Away Retro Version 11/12",
+    nameEs: "Santos Away Retro Version 11/12",
+    category: "retro",
+    teamType: "club",
+    images: [jerseySantos1112AwayFront, jerseySantos1112AwayBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Classic retro jersey from the iconic 2011/12 season. Faithful reproduction with vintage design details and comfortable fit.",
+    descriptionEs: "Camiseta retro clásica de la icónica temporada 2011/12. Reproducción fiel con detalles de diseño vintage y ajuste cómodo.",
+  },
+  {
+    id: "real-madrid-retro-away-0102",
+    name: "Real Madrid Away Retro Version 01/02",
+    nameEs: "Real Madrid Away Retro Version 01/02",
+    category: "retro",
+    teamType: "club",
+    images: [jerseyRealMadrid0102AwayFront, jerseyRealMadrid0102AwayBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Classic retro jersey from the iconic 2001/02 season. Faithful reproduction with vintage design details and comfortable fit.",
+    descriptionEs: "Camiseta retro clásica de la icónica temporada 2001/02. Reproducción fiel con detalles de diseño vintage y ajuste cómodo.",
+  },
+
   {
 
     id: "shorts-arsenal-home-2526",
