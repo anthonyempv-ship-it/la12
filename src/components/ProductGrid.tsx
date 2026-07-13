@@ -45,13 +45,13 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function buildTopPicks(all: Product[], limit: number): Product[] {
+function buildTopPicks(all: Product[]): Product[] {
   const byId = new Map(all.map((p) => [p.id, p]));
   const picked: Product[] = [];
   const pickedIds = new Set<string>();
 
   const add = (p?: Product) => {
-    if (!p || pickedIds.has(p.id) || picked.length >= limit) return;
+    if (!p || pickedIds.has(p.id)) return;
     picked.push(p);
     pickedIds.add(p.id);
   };
@@ -73,11 +73,8 @@ function buildTopPicks(all: Product[], limit: number): Product[] {
     add(candidate);
   }
 
-  // 4. Fill the rest randomly with the remainder of the catalog.
-  for (const p of shuffle(all.filter((p) => !pickedIds.has(p.id)))) {
-    if (picked.length >= limit) break;
-    add(p);
-  }
+  // 4. Append the rest of the catalog in random order (no duplicates).
+  for (const p of shuffle(all.filter((p) => !pickedIds.has(p.id)))) add(p);
 
   return picked;
 }
