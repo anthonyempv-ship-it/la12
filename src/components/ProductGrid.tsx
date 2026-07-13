@@ -43,7 +43,18 @@ export function ProductGrid({
   const sectionRef = useRef<HTMLElement | null>(null);
   const [page, setPage] = useState(1);
 
+  // Detect homepage Top Picks mode: limited list, no filters/search/force
+  const isTopPicks =
+    !!limit &&
+    !searchQuery &&
+    !forceTeamType &&
+    !forceCategory &&
+    !filterKey;
+
   const filtered = useMemo(() => {
+    if (isTopPicks) {
+      return buildTopPicks(products, limit!);
+    }
     const collectionPredicate = filterKey ? collectionPredicates[filterKey] : null;
     return products
       .filter((p) => (forceTeamType ? p.teamType === forceTeamType : true))
@@ -64,7 +75,7 @@ export function ProductGrid({
         const nameB = (lang === "es" ? b.nameEs : b.name).toLowerCase();
         return nameA.localeCompare(nameB);
       });
-  }, [searchQuery, lang, forceTeamType, forceCategory, filterKey]);
+  }, [searchQuery, lang, forceTeamType, forceCategory, filterKey, isTopPicks, limit]);
 
   // Reset page on filter/search change
   useEffect(() => {
