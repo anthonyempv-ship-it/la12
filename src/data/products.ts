@@ -2061,5 +2061,6 @@ export const products: Product[] = [
     sizes: ["S", "M", "L", "XL", "2XL"],
     description: "Arsenal home shorts 26/27 — white body with red and burgundy side stripes, patterned hem and red printed cannon crest.",
     descriptionEs: "Shorts Arsenal local 26/27 — cuerpo blanco con franjas laterales rojas y vino, dobladillo estampado y escudo del cañón impreso en rojo.",
+    disablePatches: true,
   },
 ];
