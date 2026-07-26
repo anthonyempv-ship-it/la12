@@ -288,6 +288,16 @@ import shortsColombiaDetail from "@/assets/shorts-colombia-home-2026-detail.jpg"
 import shortsSpainFront from "@/assets/shorts-spain-home-2026-front.jpg";
 import shortsSpainDetail from "@/assets/shorts-spain-home-2026-detail.jpg";
 
+import jerseyBarcelona2627AwayFront from "@/assets/jersey-barcelona-2627-away-front.jpg";
+import jerseyBarcelona2627AwayBack from "@/assets/jersey-barcelona-2627-away-back.jpg";
+import jerseyBarcelona2627ThirdFront from "@/assets/jersey-barcelona-2627-third-front.jpg";
+import jerseyBarcelona2627ThirdBack from "@/assets/jersey-barcelona-2627-third-back.jpg";
+import jerseyNewcastle2627HomeFront from "@/assets/jersey-newcastle-2627-home-front.jpg";
+import jerseyNewcastle2627HomeBack from "@/assets/jersey-newcastle-2627-home-back.jpg";
+import jerseyLeipzig2627HomeFront from "@/assets/jersey-leipzig-2627-home-front.jpg";
+import jerseyLeipzig2627HomeBack from "@/assets/jersey-leipzig-2627-home-back.jpg";
+import shortsArsenal2627Front from "@/assets/shorts-arsenal-home-2627-front.jpg";
+import shortsArsenal2627Detail from "@/assets/shorts-arsenal-home-2627-detail.jpg";
 export type ProductCategory = "player" | "retro" | "longsleeve" | "special" | "shorts";
 export type TeamType = "club" | "national";
 
@@ -1991,5 +2001,65 @@ export const products: Product[] = [
     description: "Spain 2026 home shorts — navy blue body with yellow and red flag side stripes and gold embroidered RFEF crest with championship star.",
     descriptionEs: "Shorts España local 2026 — cuerpo azul marino con franjas laterales amarillas y rojas de la bandera y escudo RFEF bordado en dorado con estrella de campeón.",
     disablePatches: true,
+  },
+  {
+    id: "barcelona-2627-away",
+    name: "Barcelona Away Player Version 26/27",
+    nameEs: "Barcelona Away Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyBarcelona2627AwayFront, jerseyBarcelona2627AwayBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Barcelona 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Barcelona 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "barcelona-2627-third",
+    name: "Barcelona Third Player Version 26/27",
+    nameEs: "Barcelona Third Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyBarcelona2627ThirdFront, jerseyBarcelona2627ThirdBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Barcelona 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Barcelona 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "newcastle-2627-home",
+    name: "Newcastle Home Player Version 26/27",
+    nameEs: "Newcastle Home Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyNewcastle2627HomeFront, jerseyNewcastle2627HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Newcastle 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Newcastle 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "leipzig-2627-home",
+    name: "RB Leipzig Home Player Version 26/27",
+    nameEs: "RB Leipzig Home Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyLeipzig2627HomeFront, jerseyLeipzig2627HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey RB Leipzig 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player RB Leipzig 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "shorts-arsenal-home-2627",
+    name: "Arsenal Home 26/27 Shorts",
+    nameEs: "Shorts Arsenal Local 26/27",
+    category: "shorts",
+    teamType: "club",
+    images: [shortsArsenal2627Front, shortsArsenal2627Detail],
+    price: 25.00,
+    sizes: ["S", "M", "L", "XL", "2XL"],
+    description: "Arsenal home shorts 26/27 — white body with red and burgundy side stripes, patterned hem and red printed cannon crest.",
+    descriptionEs: "Shorts Arsenal local 26/27 — cuerpo blanco con franjas laterales rojas y vino, dobladillo estampado y escudo del cañón impreso en rojo.",
   },
 ];
