@@ -298,6 +298,16 @@ import jerseyLeipzig2627HomeFront from "@/assets/jersey-leipzig-2627-home-front.
 import jerseyLeipzig2627HomeBack from "@/assets/jersey-leipzig-2627-home-back.jpg";
 import shortsArsenal2627Front from "@/assets/shorts-arsenal-home-2627-front.jpg";
 import shortsArsenal2627Detail from "@/assets/shorts-arsenal-home-2627-detail.jpg";
+import jerseyLiverpool2627HomeFront from "@/assets/jersey-liverpool-2627-home-front.jpg";
+import jerseyLiverpool2627HomeBack from "@/assets/jersey-liverpool-2627-home-back.jpg";
+import jerseyInterLs2627AwayFront from "@/assets/jersey-inter-ls-2627-away-front.jpg";
+import jerseyInterLs2627AwayBack from "@/assets/jersey-inter-ls-2627-away-back.jpg";
+import jerseyPorto1415HomeFront from "@/assets/jersey-porto-1415-home-front.jpg";
+import jerseyPorto1415HomeBack from "@/assets/jersey-porto-1415-home-back.jpg";
+import jerseyAcMilan9900AwayFront from "@/assets/jersey-acmilan-9900-away-front.jpg";
+import jerseyAcMilan9900AwayBack from "@/assets/jersey-acmilan-9900-away-back.jpg";
+import jerseyLyon2627AwayFront from "@/assets/jersey-lyon-2627-away-front.jpg";
+import jerseyLyon2627AwayBack from "@/assets/jersey-lyon-2627-away-back.jpg";
 export type ProductCategory = "player" | "retro" | "longsleeve" | "special" | "shorts";
 export type TeamType = "club" | "national";
 
@@ -2062,5 +2072,65 @@ export const products: Product[] = [
     description: "Arsenal home shorts 26/27 — white body with red and burgundy side stripes, patterned hem and red printed cannon crest.",
     descriptionEs: "Shorts Arsenal local 26/27 — cuerpo blanco con franjas laterales rojas y vino, dobladillo estampado y escudo del cañón impreso en rojo.",
     disablePatches: true,
+  },
+  {
+    id: "liverpool-2627-home",
+    name: "Liverpool Home Player Version 26/27",
+    nameEs: "Liverpool Home Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyLiverpool2627HomeFront, jerseyLiverpool2627HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Liverpool 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Liverpool 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "inter-ls-2627-away",
+    name: "Inter Milan Away Long Sleeve Player Version 26/27",
+    nameEs: "Inter Milan Away Long Sleeve Versión Jugador 26/27",
+    category: "longsleeve",
+    teamType: "club",
+    images: [jerseyInterLs2627AwayFront, jerseyInterLs2627AwayBack],
+    price: 40.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Long sleeve player version jersey Inter Milan 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta manga larga versión player Inter Milan 26/27. Como la que usan los jugadores en cancha.",
+  },
+  {
+    id: "porto-1415-home",
+    name: "Porto Home Retro Version 14/15",
+    nameEs: "Porto Home Retro Version 14/15",
+    category: "retro",
+    teamType: "club",
+    images: [jerseyPorto1415HomeFront, jerseyPorto1415HomeBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Retro jersey from the iconic 2014/15 season. Faithful reproduction with vintage design details and comfortable fit.",
+    descriptionEs: "Camiseta retro de la icónica temporada 2014/15. Reproducción fiel con detalles de diseño vintage y ajuste cómodo.",
+  },
+  {
+    id: "acmilan-9900-away",
+    name: "AC Milan Away Retro Version 99/00",
+    nameEs: "AC Milan Away Retro Version 99/00",
+    category: "retro",
+    teamType: "club",
+    images: [jerseyAcMilan9900AwayFront, jerseyAcMilan9900AwayBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Retro jersey from the iconic 1999/00 centenary season. Faithful reproduction with vintage design details and comfortable fit.",
+    descriptionEs: "Camiseta retro de la icónica temporada del centenario 1999/00. Reproducción fiel con detalles de diseño vintage y ajuste cómodo.",
+  },
+  {
+    id: "lyon-2627-away",
+    name: "Lyon Away Player Version 26/27",
+    nameEs: "Lyon Away Versión Jugador 26/27",
+    category: "player",
+    teamType: "club",
+    images: [jerseyLyon2627AwayFront, jerseyLyon2627AwayBack],
+    price: 35.00,
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    description: "Player version jersey Lyon 26/27. Just like the one players wear on the pitch.",
+    descriptionEs: "Camiseta versión player Lyon 26/27. Como la que usan los jugadores en cancha.",
   },
 ];
