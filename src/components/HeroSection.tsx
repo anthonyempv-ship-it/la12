@@ -58,7 +58,7 @@ export function HeroSection() {
         </h1>
 
         <p
-          className={`text-muted-foreground font-mono text-xs md:text-sm tracking-wider mb-8 transition-all duration-1000 delay-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          className={`text-white font-mono text-xs md:text-sm tracking-wider mb-8 transition-all duration-1000 delay-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           style={{ filter: visible ? "blur(0)" : "blur(6px)" }}
         >
           {t("hero.subtitle")}
