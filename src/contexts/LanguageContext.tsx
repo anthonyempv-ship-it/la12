@@ -45,7 +45,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "hero.line1": { en: "From the", es: "Del" },
   "hero.line2": { en: "Potrero", es: "Potrero" },
   "hero.line3": { en: "to the Pitch", es: "a la Cancha" },
-  "hero.subtitle": { en: "Del Potrero a la Cancha", es: "From the Potrero to the Pitch" },
+  "hero.subtitle": { en: "Trusted by Football Fans", es: "Confiado por Hinchas" },
   "hero.shopNow": { en: "Shop Now", es: "Ver Camisetas" },
   "hero.ourStory": { en: "Our Story", es: "Nuestra Historia" },
   "hero.includes": {
